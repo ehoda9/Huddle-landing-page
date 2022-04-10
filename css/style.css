@@ -1,0 +1,187 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 45px 60px;
+    margin: 0 auto;
+    background-color: var(--Violet);
+}
+
+.page__header {
+    margin-bottom: 5rem;
+}
+
+.page_landing {
+    display: flex;
+    color: white;
+}
+
+@media (max-width:768px) {
+    body {
+        padding: 25px 35px;
+    }
+
+    .page__header {
+        margin-bottom: 3rem;
+    }
+
+    .page_landing {
+        flex-direction: column;
+    }
+
+    .header_logo {
+        width: 8rem;
+    }
+
+}
+
+.landing_details {
+    padding: 2rem;
+}
+
+.landing_title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.landing_desc {
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.landing_btn {
+    background-color: white;
+    border-radius: 2rem;
+    text-align: center;
+    color: var(--Violet);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    padding: 0.9rem;
+    max-width: 170px;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.553);
+    transition: 0.3s;
+}
+
+.landing_btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--Soft-Magenta);
+}
+
+.footer {
+    text-align: right;
+    padding: 2rem;
+}
+
+.icon {
+    margin: 0 0.5rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2rem;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    cursor: pointer;
+    border-color: var(--Soft-Magenta);
+    color: var(--Soft-Magenta);
+}
+
+@media (max-width:768px) {
+
+    .landing_details {
+        text-align: center;
+    }
+
+    .landing_title {
+        font-size: 1.3rem;
+    }
+
+    .landing_desc {
+        font-size: 0.8rem;
+    }
+
+
+    .icon {
+        font-size: 0.7rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:768px) {
+    .landing_btn {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        padding: 0.6rem;
+        max-width: 170px;
+    }
+}
+
+/* 4k Screen*/
+@media (min-width:2000px) {
+    .header_logo {
+        width: 600px;
+    }
+
+    .mockups {
+        width: 4000px;
+    }
+
+    .landing_title {
+        font-size: 5rem;
+    }
+
+    .landing_btn {
+        padding: 2rem;
+        font-size: 3rem;
+        max-width: 100%;
+    }
+
+    .landing_desc {
+        font-size: 3rem;
+    }
+
+    .icon {
+        font-size: 4rem;
+        padding: 2rem;
+        border-radius: 5rem;
+        margin-right: 3rem;
+    }
+}
+
+/* smallest ever screen kids mobile toys :D */
+@media (max-width:300px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .landing_title {
+        margin-top: -4rem;
+    }
+
+    .mockups {
+        display: none;
+    }
+}
